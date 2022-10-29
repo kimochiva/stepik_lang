@@ -18,6 +18,7 @@ def browser(request):
     browser = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
 
     yield browser
+    browser.quit()
 
 
 
